@@ -28,3 +28,11 @@ UPDATE address_book set email_address = 'kratigupta8545@gmail.com' WHERE firstna
 Select * from address_book Where city = 'Ghaziabad' or state = 'Ghaziabad';
 
 Select Count(*)  from address_book Where city = 'Ghaziabad' or state = 'Ghaziabad';
+
+INSERT INTO address_book (firstname,lastname,address,city,state,zip,phone_number,email_address) VALUES
+       ('Shreya','Gupta','kidwai nagar','Lucknow','UP','208011','9832779377','k@gmail.com');
+
+ INSERT INTO address_book (firstname,lastname,address,city,state,zip,phone_number,email_address) VALUES
+     ('Shruti','Tyagi','gzb','Ghaziabad','UP','276388','8254567899','N@gmail.com');
+
+Select * from address_book a Where city = 'Ghaziabad' order by a.firstname;
