@@ -25,3 +25,4 @@ UPDATE address_book set email_address = 'kratigupta8545@gmail.com' WHERE firstna
  DELETE FROM address_book WHERE firstname = 'Krati' and lastname = 'Gupta';
  Select * from address_book;
 
+Select * from address_book Where city = 'Ghaziabad' or state = 'Ghaziabad';
