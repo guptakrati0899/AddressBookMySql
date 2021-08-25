@@ -21,3 +21,7 @@ SELECT * FROM address_book;
 
 UPDATE address_book set email_address = 'kratigupta8545@gmail.com' WHERE firstname = 'Krati';
  Select * from address_book;
+ 
+ DELETE FROM address_book WHERE firstname = 'Krati' and lastname = 'Gupta';
+ Select * from address_book;
+
