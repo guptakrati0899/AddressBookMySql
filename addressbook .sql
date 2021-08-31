@@ -41,3 +41,5 @@ ALTER TABLE address_book ADD type VARCHAR(255) AFTER lastname;
 UPDATE address_book SET type = 'Family' WHERE firstname = 'Krati' or firstname = 'Shreya';
 UPDATE address_book SET type = 'Friend' WHERE firstname = 'Nishu' or firstname = 'Shruti';
 SELECT * FROM address_book;
+
+SELECT type, Count(firstname) FROM address_book GROUP BY type;
