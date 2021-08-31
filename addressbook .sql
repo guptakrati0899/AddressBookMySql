@@ -36,3 +36,8 @@ INSERT INTO address_book (firstname,lastname,address,city,state,zip,phone_number
      ('Shruti','Tyagi','gzb','Ghaziabad','UP','276388','8254567899','N@gmail.com');
 
 Select * from address_book a Where city = 'Ghaziabad' order by a.firstname;
+
+ALTER TABLE address_book ADD type VARCHAR(255) AFTER lastname;
+UPDATE address_book SET type = 'Family' WHERE firstname = 'Krati' or firstname = 'Shreya';
+UPDATE address_book SET type = 'Friend' WHERE firstname = 'Nishu' or firstname = 'Shruti';
+SELECT * FROM address_book;
