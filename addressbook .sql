@@ -43,3 +43,7 @@ UPDATE address_book SET type = 'Friend' WHERE firstname = 'Nishu' or firstname =
 SELECT * FROM address_book;
 
 SELECT type, Count(firstname) FROM address_book GROUP BY type;
+
+INSERT INTO address_book(firstname, lastname, type, address, city, state, zip, phone_number, email_address) VALUES
+	('Shreya','Gupta','Friend','kidwai nagar','Lucknow','UP','208011','9832779377','k@gmail.com');
+SELECT * FROM address_book WHERE firstname = 'Shreya';
